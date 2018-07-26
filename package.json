@@ -1,0 +1,29 @@
+{
+ "name": "rollup-dynamic-imports",
+ "version": "1.0.0",
+ "main": "index.js",
+ "license": "MIT",
+ "dependencies": {
+  "@angular-devkit/build-optimizer": "^0.7.0",
+  "@angular/animations": "^6.1.0",
+  "@angular/common": "^6.1.0",
+  "@angular/compiler": "^6.1.0",
+  "@angular/compiler-cli": "^6.1.0",
+  "@angular/core": "^6.1.0",
+  "@angular/elements": "^6.1.0",
+  "@angular/platform-browser": "^6.1.0",
+  "@angular/router": "^6.1.0",
+  "jsaction": "^0.0.2",
+  "rollup": "^0.63.4",
+  "rollup-plugin-node-resolve": "^3.3.0",
+  "rollup-plugin-uglify-es": "^0.0.1",
+  "rxjs": "^6.2.2",
+  "typescript": "^2.9.2"
+ },
+ "scripts": {
+  "build": "ngc",
+  "bundle": "rollup -c rollup.config.js",
+  "serve": "http-server public",
+  "start": "npm run build && npm run bundle && npm run serve"
+ }
+}
